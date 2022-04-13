@@ -401,11 +401,19 @@ PrefabInstance:
     - target: {fileID: 6949728500959468954, guid: 5b607125cef6b9a4b9069fa2c08524cc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 757211167}
+      objectReference: {fileID: 757211165}
+    - target: {fileID: 6949728500959468954, guid: 5b607125cef6b9a4b9069fa2c08524cc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Goodgulf.Networking.NetworkManagerUI, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 6949728501673560120, guid: 5b607125cef6b9a4b9069fa2c08524cc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 757211167}
+      objectReference: {fileID: 757211165}
+    - target: {fileID: 6949728501673560120, guid: 5b607125cef6b9a4b9069fa2c08524cc, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Goodgulf.Networking.NetworkManagerUI, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 6949728502220959266, guid: 5b607125cef6b9a4b9069fa2c08524cc, type: 3}
       propertyPath: m_Pivot.x
       value: 0
