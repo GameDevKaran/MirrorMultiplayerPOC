@@ -22,6 +22,12 @@ public class MobileDisableAutoSwitchControls : MonoBehaviour
 
     void Start()
     {
+        //DisableAutoSwitchControls();
+    }
+
+    public void Start(PlayerInput playerInput)
+    {
+        this.playerInput = playerInput;
         DisableAutoSwitchControls();
     }
 

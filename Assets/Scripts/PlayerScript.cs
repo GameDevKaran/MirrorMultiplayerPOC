@@ -94,10 +94,11 @@ namespace Goodgulf.Networking
             try 
             {
                 FindObjectOfType<UICanvasControllerInput>().starterAssetsInputs = this.GetComponent<StarterAssetsInputs>();
+                FindObjectOfType<MobileDisableAutoSwitchControls>().Start(playerInput);
             }
             catch
             {
-                Debug.Log("Error: FindObjectOfType<UICanvasControllerInput>().starterAssetsInputs");
+                Debug.Log("Error: FindObjectOfType<UICanvasControllerInput>().starterAssetsInputs || playerInput");
             }
 
             // Link the camera to this instance
@@ -108,11 +109,12 @@ namespace Goodgulf.Networking
 
             if(playerCameraRoot && playerFollowCamera)
             {
-                CinemachineVirtualCamera cinemachineVirtualCamera = playerFollowCamera.GetComponent<CinemachineVirtualCamera>();
+                CinemachineVirtualCameraBase cinemachineVirtualCamera = playerFollowCamera.GetComponent<CinemachineVirtualCameraBase>();
                 if (cinemachineVirtualCamera)
                 {
                     // Let the camera follow this local player
                     cinemachineVirtualCamera.Follow = playerCameraRoot.transform;
+                    cinemachineVirtualCamera.LookAt = playerCameraRoot.transform;
 
                     Vector3 newCameraPosition = new Vector3(this.transform.position.x+0.2f, 1.375f, this.transform.position.z-4.0f);
 

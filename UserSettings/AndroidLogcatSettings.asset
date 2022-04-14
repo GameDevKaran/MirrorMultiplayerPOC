@@ -1,0 +1,125 @@
+{
+    "m_SelectedDeviceId": "MZS4QSVCR8CQ8LBY",
+    "m_SelectedPackage": {
+        "deviceId": "MZS4QSVCR8CQ8LBY",
+        "name": "com.DefaultCompany.MirrorMultiplayerPOC",
+        "processId": 16804,
+        "exited": false
+    },
+    "m_SelectedPriority": 0,
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "MZS4QSVCR8CQ8LBY",
+            "name": "com.DefaultCompany.MirrorMultiplayerPOC",
+            "processId": 10107,
+            "exited": true
+        },
+        {
+            "deviceId": "MZS4QSVCR8CQ8LBY",
+            "name": "com.DefaultCompany.MirrorMultiplayerPOC",
+            "processId": 10449,
+            "exited": true
+        },
+        {
+            "deviceId": "MZS4QSVCR8CQ8LBY",
+            "name": "com.DefaultCompany.MirrorMultiplayerPOC",
+            "processId": 11915,
+            "exited": true
+        },
+        {
+            "deviceId": "MZS4QSVCR8CQ8LBY",
+            "name": "com.DefaultCompany.MirrorMultiplayerPOC",
+            "processId": 12332,
+            "exited": true
+        },
+        {
+            "deviceId": "MZS4QSVCR8CQ8LBY",
+            "name": "com.DefaultCompany.MirrorMultiplayerPOC",
+            "processId": 12664,
+            "exited": true
+        },
+        {
+            "deviceId": "MZS4QSVCR8CQ8LBY",
+            "name": "com.DefaultCompany.MirrorMultiplayerPOC",
+            "processId": 13258,
+            "exited": false
+        },
+        {
+            "deviceId": "MZS4QSVCR8CQ8LBY",
+            "name": "com.DefaultCompany.MirrorMultiplayerPOC",
+            "processId": 15352,
+            "exited": false
+        },
+        {
+            "deviceId": "MZS4QSVCR8CQ8LBY",
+            "name": "com.DefaultCompany.MirrorMultiplayerPOC",
+            "processId": 15814,
+            "exited": false
+        },
+        {
+            "deviceId": "MZS4QSVCR8CQ8LBY",
+            "name": "com.DefaultCompany.MirrorMultiplayerPOC",
+            "processId": 16225,
+            "exited": false
+        },
+        {
+            "deviceId": "MZS4QSVCR8CQ8LBY",
+            "name": "com.DefaultCompany.MirrorMultiplayerPOC",
+            "processId": 16804,
+            "exited": false
+        }
+    ],
+    "m_Tags": {
+        "m_Entries": [
+            {
+                "m_Name": "Filter by all listed tags",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "No Filter",
+                "m_Selected": true
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Tag Control...",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Unity",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "CRASH",
+                "m_Selected": false
+            }
+        ]
+    },
+    "m_MemoryViewerState": {
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "MemoryGroup": 2,
+        "Behavior": 0
+    },
+    "m_Filter": "",
+    "m_FilterIsRegularExpression": false,
+    "m_SymbolPaths": []
+}
