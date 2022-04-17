@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "MZS4QSVCR8CQ8LBY",
         "name": "com.DefaultCompany.MirrorMultiplayerPOC",
-        "processId": 16804,
+        "processId": 29045,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -66,6 +66,42 @@
             "deviceId": "MZS4QSVCR8CQ8LBY",
             "name": "com.DefaultCompany.MirrorMultiplayerPOC",
             "processId": 16804,
+            "exited": false
+        },
+        {
+            "deviceId": "MZS4QSVCR8CQ8LBY",
+            "name": "com.DefaultCompany.MirrorMultiplayerPOC",
+            "processId": 31888,
+            "exited": false
+        },
+        {
+            "deviceId": "MZS4QSVCR8CQ8LBY",
+            "name": "com.DefaultCompany.MirrorMultiplayerPOC",
+            "processId": 6848,
+            "exited": false
+        },
+        {
+            "deviceId": "MZS4QSVCR8CQ8LBY",
+            "name": "com.DefaultCompany.MirrorMultiplayerPOC",
+            "processId": 19291,
+            "exited": false
+        },
+        {
+            "deviceId": "MZS4QSVCR8CQ8LBY",
+            "name": "com.DefaultCompany.MirrorMultiplayerPOC",
+            "processId": 26205,
+            "exited": false
+        },
+        {
+            "deviceId": "MZS4QSVCR8CQ8LBY",
+            "name": "com.DefaultCompany.MirrorMultiplayerPOC",
+            "processId": 28251,
+            "exited": false
+        },
+        {
+            "deviceId": "MZS4QSVCR8CQ8LBY",
+            "name": "com.DefaultCompany.MirrorMultiplayerPOC",
+            "processId": 29045,
             "exited": false
         }
     ],

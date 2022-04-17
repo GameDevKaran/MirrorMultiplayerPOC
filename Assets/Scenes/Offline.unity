@@ -365,7 +365,7 @@ MonoBehaviour:
   networkAddress: localhost
   maxConnections: 100
   authenticator: {fileID: 0}
-  playerPrefab: {fileID: 4416926081852918481, guid: 64dce48905ffd9b4293e595fa6941544, type: 3}
+  playerPrefab: {fileID: 7276313954971629269, guid: 2709a3a066249b540bcf38c64821638d, type: 3}
   autoCreatePlayer: 1
   playerSpawnMethod: 1
   spawnPrefabs: []
@@ -406,6 +406,38 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Goodgulf.Networking.NetworkManagerUI, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 6949728500959468955, guid: 5b607125cef6b9a4b9069fa2c08524cc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949728500959468955, guid: 5b607125cef6b9a4b9069fa2c08524cc, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949728500959468955, guid: 5b607125cef6b9a4b9069fa2c08524cc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949728500959468955, guid: 5b607125cef6b9a4b9069fa2c08524cc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949728501582007126, guid: 5b607125cef6b9a4b9069fa2c08524cc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949728501582007126, guid: 5b607125cef6b9a4b9069fa2c08524cc, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949728501582007126, guid: 5b607125cef6b9a4b9069fa2c08524cc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949728501582007126, guid: 5b607125cef6b9a4b9069fa2c08524cc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6949728501673560120, guid: 5b607125cef6b9a4b9069fa2c08524cc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -413,6 +445,22 @@ PrefabInstance:
     - target: {fileID: 6949728501673560120, guid: 5b607125cef6b9a4b9069fa2c08524cc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: Goodgulf.Networking.NetworkManagerUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949728501673560121, guid: 5b607125cef6b9a4b9069fa2c08524cc, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949728501673560121, guid: 5b607125cef6b9a4b9069fa2c08524cc, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949728501673560121, guid: 5b607125cef6b9a4b9069fa2c08524cc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6949728501673560121, guid: 5b607125cef6b9a4b9069fa2c08524cc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6949728502220959266, guid: 5b607125cef6b9a4b9069fa2c08524cc, type: 3}
       propertyPath: m_Pivot.x

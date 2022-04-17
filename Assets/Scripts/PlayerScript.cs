@@ -14,17 +14,8 @@ namespace Goodgulf.Networking
     [RequireComponent(typeof(NetworkAnimator))]
     public class PlayerScript : NetworkBehaviour
     {
-        /*
-         * Attach this script to the PlayerArmature prefab in StarterAssets>ThirdPersonController>Prefabs
-         * 
-         * This script will disable the third person controller components on Awake() and only
-         * enable them in the OnStartLocalPlayer. Effectively only the local player can "command" this
-         * object while the other players only see it move & animate.
-         * 
-         * The scipt also holds the player name (shown in the UI at the top left, the txtPlayer holds the reference to the UI element)
-         */
+        private static int playerID;
 
-        // These three third person controller elements need to be switched off for non local player instances:
         private CharacterController characterController;
         private PlayerInput playerInput;
         private ThirdPersonController thirdPersonController;
@@ -64,6 +55,12 @@ namespace Goodgulf.Networking
             {
                 Debug.LogError("PlayerScript.Awake(): txtPlayerName not found.");
             }
+
+            GetComponent<Animator>().avatar = Instantiate(Resources.Load<GameObject>($"Characters/{playerID+1}"), transform.Find("Geometry")).GetComponent<PlayerVariant>().avatar;
+            playerID++;
+
+            gameObject.SetActive(false);
+            gameObject.SetActive(true);
         }
 
         public override void OnStartLocalPlayer()
@@ -114,7 +111,7 @@ namespace Goodgulf.Networking
                 {
                     // Let the camera follow this local player
                     cinemachineVirtualCamera.Follow = playerCameraRoot.transform;
-                    cinemachineVirtualCamera.LookAt = playerCameraRoot.transform;
+                    //cinemachineVirtualCamera.LookAt = playerCameraRoot.transform;
 
                     Vector3 newCameraPosition = new Vector3(this.transform.position.x+0.2f, 1.375f, this.transform.position.z-4.0f);
 
