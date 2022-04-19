@@ -23,6 +23,9 @@ namespace Goodgulf.Networking
     /// </summary>
     public class NetworkRoomManagerUI : NetworkRoomManager
     {
+
+        private GameObject timer;
+
         #region Server Callbacks
 
         /// <summary>
@@ -55,7 +58,10 @@ namespace Goodgulf.Networking
         /// This is called on the server when a client disconnects.
         /// </summary>
         /// <param name="conn">The connection that disconnected.</param>
-        public override void OnRoomServerDisconnect(NetworkConnectionToClient conn) { }
+        public override void OnRoomServerDisconnect(NetworkConnectionToClient conn) 
+        {
+
+        }
 
         /// <summary>
         /// This is called on the server when a networked scene finishes loading.
@@ -92,9 +98,49 @@ namespace Goodgulf.Networking
         /// <para>See OnRoomServerCreateGamePlayer to customize the player object for the initial GamePlay scene.</para>
         /// </summary>
         /// <param name="conn">The connection the player object is for.</param>
+        /// 
         public override void OnRoomServerAddPlayer(NetworkConnectionToClient conn)
         {
             base.OnRoomServerAddPlayer(conn);
+        }
+        public override void OnServerDisconnect(NetworkConnectionToClient conn)
+        {
+            // destroy time
+            if (timer != null)
+            {
+                NetworkServer.Destroy(timer);
+            }
+
+            base.OnServerDisconnect(conn);
+        }
+        public override void OnServerAddPlayer(NetworkConnectionToClient conn)
+        {
+            base.OnServerAddPlayer(conn);
+
+            // spawn a game timer as soon as we have two players
+            if (numPlayers == 2)
+            {
+                Debug.Log("NetworkManagerMyGame.OnServerAddPlayer(): spawn timer.");
+
+                // The Timer prefab is picked from the registered spawnable prefabs
+                //timer = Instantiate(spawnPrefabs.Find(prefab => prefab.name == "TimerPrefab"));
+                timer = Instantiate(spawnPrefabs[0]);
+                DontDestroyOnLoad(timer);
+
+                // Add a callback when the timer reaches 0
+                GameTimer gameTimer = timer.GetComponent<GameTimer>();
+                if (gameTimer)
+                    gameTimer.ClockReady.AddListener(EndOfTimer);
+
+                // Now spawn it on all clients
+                NetworkServer.Spawn(timer);
+            }
+        }
+        public void EndOfTimer()
+        {
+            Debug.Log("NetworkManagerMyGame.EndOfTimer(): timer ready.");
+
+            // End of match code here
         }
 
         /// <summary>

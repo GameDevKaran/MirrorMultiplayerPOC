@@ -368,7 +368,8 @@ MonoBehaviour:
   playerPrefab: {fileID: 7276313954971629269, guid: 2709a3a066249b540bcf38c64821638d, type: 3}
   autoCreatePlayer: 1
   playerSpawnMethod: 1
-  spawnPrefabs: []
+  spawnPrefabs:
+  - {fileID: 6949728502220959270, guid: 4d68e24a48f64f947999c80425078e5b, type: 3}
   showRoomGUI: 0
   minPlayers: 1
   roomPlayerPrefab: {fileID: 8515723911422543941, guid: 3fa2c970c093cac439f07663c416beb1, type: 3}
@@ -377,6 +378,7 @@ MonoBehaviour:
   _allPlayersReady: 0
   roomSlots: []
   clientIndex: 0
+  prefabTimer: {fileID: 6949728502220959270, guid: 4d68e24a48f64f947999c80425078e5b, type: 3}
 --- !u!4 &757211168
 Transform:
   m_ObjectHideFlags: 0

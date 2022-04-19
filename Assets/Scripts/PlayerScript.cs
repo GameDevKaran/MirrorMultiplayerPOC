@@ -56,7 +56,19 @@ namespace Goodgulf.Networking
                 Debug.LogError("PlayerScript.Awake(): txtPlayerName not found.");
             }
 
-            GetComponent<Animator>().avatar = Instantiate(Resources.Load<GameObject>($"Characters/{playerID+1}"), transform.Find("Geometry")).GetComponent<PlayerVariant>().avatar;
+            Transform parent = transform.Find("Geometry");
+            GameObject currentAvatar;
+            for (int i = 0; i < 5; i++)
+            {
+                if(playerID + 1 == i)
+                {
+                    currentAvatar = parent.GetChild(i%5).gameObject;
+                    currentAvatar.SetActive(true);
+                    GetComponent<Animator>().avatar = currentAvatar.GetComponent<PlayerVariant>().avatar;
+                    break;
+                }
+            }
+            //GetComponent<Animator>().avatar = Instantiate(Resources.Load<GameObject>($"Characters/{playerID+1}"), transform.Find("Geometry")).GetComponent<PlayerVariant>().avatar;
             playerID++;
 
             gameObject.SetActive(false);
